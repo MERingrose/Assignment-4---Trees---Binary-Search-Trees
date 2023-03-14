@@ -1,0 +1,41 @@
+27
+Does the reader prefer fiction?
+Does the reader prefer non-fiction?
+Does the reader prefer stories set in a specific time period or setting?
+Does the reader prefer a specific topic or theme?
+Does the reader prefer narrative-driven non-fiction?
+Does the reader prefer a specific genre or theme?
+Does the reader prefer stories set in a historical setting?
+Does the reader prefer biographies?
+Does the reader prefer science?
+Does the reader prefer stories set in the past?
+Does the reader prefer stories with a focus on action?
+Does the reader prefer stories with a fantastical element?
+Does the reader prefer stories about personal relationships?
+Your suggested genre is: Historical Fiction.
+Your suggested genre is: Contemporary Fiction.
+Your suggested genre is: Romance.
+Your suggested genre is: Literary Fiction.
+Your suggested genre is: Thriller.
+Your suggested genre is: Psychological Fiction.
+Your suggested genre is: Science Fiction or Fantasy.
+Your suggested genre is: Realistic Fiction.
+Your suggested genre is: Narrative Non-fiction.
+Your suggested genre is: Reference Books.
+Your suggested genre is: Popular Science.
+Your suggested genre is: History.
+Your suggested genre is: Biography.
+Your suggested genre is: Memoir.
+7 26 25
+8 24 23
+11 20 19
+10 18 17
+12 16 15
+9 14 13
+3 7 8
+4 22 21
+5 11 10
+6 12 9
+1 3 4
+2 5 6
+0 1 2
