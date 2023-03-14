@@ -30,36 +30,37 @@ public class LinkedBinarySearchTree<T> extends LinkedBinaryTree<T>
 
 	/**
 	 * Balances a binary tree using an inOrder traversal and a temporary ArrayList.
-	 * Uses brute-force method to methodically insert the middle of the sorted list, then the middle of the left sublist and the middle of the right sublist.  
+	 * Uses brute-force method to methodically insert the middle of the sorted list,
+	 * then the middle of the left sublist and the middle of the right sublist.
 	 * 
 	 */
 
 	public void balanceTree() {
-		
-		//instantiate a temporary ArrayList and a new Linked Binary Search Tree
+
+		// instantiate a temporary ArrayList and a new Linked Binary Search Tree
 		ArrayList<T> tempList = new ArrayList<T>();
 		LinkedBinarySearchTree<T> balancedTree = new LinkedBinarySearchTree<T>();
 
-		//in order traversal of existing list
+		// in order traversal of existing list
 		inOrder(root, tempList);
 
-		//add to new tree middle element of ArrayList, middle of left sublist, and middle of right sublist until list is empty.
-		while(!tempList.isEmpty()){
-			int middle = tempList.size()/2;
+		// add to new tree middle element of ArrayList, middle of left sublist, and
+		// middle of right sublist until list is empty.
+		while (!tempList.isEmpty()) {
+			int middle = tempList.size() / 2;
 			balancedTree.addElement(tempList.remove(middle));
-			if(!tempList.isEmpty()){
-				int leftIndex = middle/2;
+			if (!tempList.isEmpty()) {
+				int leftIndex = middle / 2;
 				balancedTree.addElement(tempList.remove(leftIndex));
 			}
-			if(!tempList.isEmpty()){
-				int rightIndex = ((middle+tempList.size())-1)/2;
+			if (!tempList.isEmpty()) {
+				int rightIndex = ((middle + tempList.size()) - 1) / 2;
 				balancedTree.addElement(tempList.remove(rightIndex));
 			}
 		}
 
-		//set root node of this tree to the root node of the balanced tree
+		// set root node of this tree to the root node of the balanced tree
 		this.root = balancedTree.getRootNode();
-
 
 	}
 
@@ -388,9 +389,9 @@ public class LinkedBinarySearchTree<T> extends LinkedBinaryTree<T>
 	 */
 	@SuppressWarnings("unchecked")
 	private BinaryTreeNode<T> findNode(T targetElement, BinaryTreeNode<T> next) {
-		if(next.element.equals(targetElement)){
+		if (next.element.equals(targetElement)) {
 			return next;
-		}else if (!(next.element.equals(targetElement)) && (next.left != null) &&
+		} else if (!(next.element.equals(targetElement)) && (next.left != null) &&
 				(((Comparable<T>) next.element).compareTo(targetElement) > 0))
 			next = findNode(targetElement, next.left);
 
@@ -485,17 +486,4 @@ public class LinkedBinarySearchTree<T> extends LinkedBinaryTree<T>
 		return result;
 	}
 
-	// @Override
-	// public int compareTo(T a) {
-	// // if the string are not equal
-	// if (this.x.compareTo(a.x) != 0) {
-	// return this.x.compareTo(a.x);
-	// } else {
-	// // we compare int values
-	// // if the strings are equal
-	// return this.y - a.y;
-	// }
-	// }
-
-	// }
 }

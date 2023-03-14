@@ -1,15 +1,21 @@
-public class NonComparableElementException extends RuntimeException{
+/**
+ * 
+ * Thrown when the class trying to be compared does not implement the Comparable
+ * interface.
+ */
 
-    public NonComparableElementException(String e){
+public class NonComparableElementException extends RuntimeException {
+
+    public NonComparableElementException(String e) {
         super(e);
     }
 
-    public NonComparableElementException(){
+    public NonComparableElementException() {
         super();
     }
-    
-    public NonComparableElementException(Throwable problem){
+
+    public NonComparableElementException(Throwable problem) {
         super(problem);
     }
-    
+
 }

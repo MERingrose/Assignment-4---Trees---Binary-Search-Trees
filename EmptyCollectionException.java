@@ -1,4 +1,9 @@
-public class EmptyCollectionException extends RuntimeException{
+/**
+ * EmptyCollectionException is thrown when the collection is empty
+ * 
+ */
+
+public class EmptyCollectionException extends RuntimeException {
 
     public EmptyCollectionException() {
     }
@@ -6,5 +11,5 @@ public class EmptyCollectionException extends RuntimeException{
     public EmptyCollectionException(String collection) {
         super("the " + collection + "is empty.");
     }
-    
+
 }
