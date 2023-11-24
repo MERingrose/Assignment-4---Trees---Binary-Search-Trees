@@ -34,12 +34,11 @@ public class DecisionTree {
             nodes.add(i, new LinkedBinaryTree<String>(scan.nextLine()));
 
         while (scan.hasNext()) {
-            
+
             scan.nextLine();
             root = scan.nextInt();
             left = scan.nextInt();
             right = scan.nextInt();
-            
 
             nodes.set(root,
                     new LinkedBinaryTree<String>((nodes.get(root)).getRootElement(),

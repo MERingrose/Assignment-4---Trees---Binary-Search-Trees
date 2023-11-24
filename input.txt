@@ -1,17 +1,18 @@
 13
-Did the pain occur after a blow or jolt?
-Do you have a fever?
-Do you have difficulty controlling your arms or legs?
-Do you have persistent morining stiffness?
-Do you have a sore throat or runny nose?
-Do you have pain or numbness in one arm or leg?
-Emergency! You may have damaged your spinal cord.
-See doctor if pain persists.
-You may have inflamation of the joints.
-See doctor to address symptoms.
-You may have a respiratory infection.
-You may have a sprain or a strain.
-You may have a muscle or nerve injury.
+Did the pain occur after a blow or jolt? (0)
+Do you have a fever?(1)
+Do you have difficulty controlling your arms or legs?(2)
+Do you have persistent morining stiffness? (3)
+Do you have a sore throat or runny nose? (4)
+Do you have pain or numbness in one arm or leg? (5)
+Emergency! You may have damaged your spinal cord. (6)
+See doctor if pain persists. (7)
+You may have inflamation of the joints. (8)
+See doctor to address symptoms. (9)
+You may have a respiratory infection. (10)
+You may have a sprain or a strain. (11)
+You may have a muscle or nerve injury. (12)
+
 3 7 8
 4 9 10
 5 11 12
