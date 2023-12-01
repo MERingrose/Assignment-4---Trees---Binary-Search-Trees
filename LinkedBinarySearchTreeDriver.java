@@ -1,3 +1,4 @@
+
 /**
  * LinkedBinarySearchTreeDriver exercises the methods and functionality of the
  * LinkedBinarySearchTree class
@@ -13,7 +14,8 @@ public class LinkedBinarySearchTreeDriver {
         LinkedBinarySearchTree<String> strTree = new LinkedBinarySearchTree<String>();
 
         // create an array of integers and an array of strings to be added to the trees
-        int[] intArr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 15, 16, 17, 18, 19 };
+        int[] intArr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+                24, 25, 26, 27, 28, 29, 30, 31 };
         String[] strArr = new String[] { "Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel",
                 "India", "Juliette", "Kilo" };
 
@@ -34,10 +36,11 @@ public class LinkedBinarySearchTreeDriver {
         // balance Integer tree
         intTree.balanceTree();
 
-        System.out.println(intTree.toString());
         System.out.println("Integer Tree Height after balancing: " + intTree.getHeight());
         System.out.println("Integer Left Tree Height after balancing: " + intTree.getLeft().getHeight());
+        System.out.println("Integer Left Tree after balancing: " + intTree.getLeft().toString());
         System.out.println("Integer Right Tree Height after balancing: " + intTree.getRight().getHeight());
+        System.out.println("Integer Right Tree after balancing: " + intTree.getRight().toString());
 
         System.out.println(strTree.toString());
         System.out.println("String Tree Height: " + strTree.getHeight());
@@ -48,7 +51,6 @@ public class LinkedBinarySearchTreeDriver {
         strTree.balanceTree();
 
         // output string elements and the height of the tree and left & right subtrees
-        System.out.println(strTree.toString());
         System.out.println("String tree after balancing Height: " + strTree.getHeight());
         System.out.println("String Left Subtree after balancing Height: " + strTree.getLeft().getHeight());
         System.out.println("String Right Subtree after balancing Height: " + strTree.getRight().getHeight());
@@ -65,6 +67,7 @@ public class LinkedBinarySearchTreeDriver {
         System.out.println("Integer tree size: " + intTree.size());
         System.out.println("String tree size: " + strTree.size());
 
+        // testing removeElement and removeMin & Max
         intTree.removeElement(11);
         strTree.removeElement("Echo");
         intTree.removeMax();

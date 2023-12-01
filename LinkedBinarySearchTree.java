@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 // import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -39,29 +40,33 @@ public class LinkedBinarySearchTree<T> extends LinkedBinaryTree<T>
 
 		// instantiate a temporary ArrayList and a new Linked Binary Search Tree
 		ArrayList<T> tempList = new ArrayList<T>();
-		LinkedBinarySearchTree<T> balancedTree = new LinkedBinarySearchTree<T>();
 
 		// in order traversal of existing list
 		inOrder(root, tempList);
 
-		// add to new tree middle element of ArrayList, middle of left sublist, and
-		// middle of right sublist until list is empty.
-		while (!tempList.isEmpty()) {
-			int middle = tempList.size() / 2;
-			balancedTree.addElement(tempList.remove(middle));
-			if (!tempList.isEmpty()) {
-				int leftIndex = middle / 2;
-				balancedTree.addElement(tempList.remove(leftIndex));
-			}
-			if (!tempList.isEmpty()) {
-				int rightIndex = ((middle + tempList.size()) - 1) / 2;
-				balancedTree.addElement(tempList.remove(rightIndex));
-			}
-		}
+		// recursively build tree and set root to new tree root
+		this.root = buildBalancedTree(tempList, 0, tempList.size() - 1);
+	}
 
-		// set root node of this tree to the root node of the balanced tree
-		this.root = balancedTree.getRootNode();
+	// private worker method that recursively builds tree. Returns BinaryTreeNode.
 
+	private BinaryTreeNode<T> buildBalancedTree(List<T> list, int start, int end) {
+		if (start > end)
+			return null;
+
+		// get midpoint element and create new node with that element
+		int mid = (start + end) / 2;
+		T element = list.get(mid);
+		BinaryTreeNode<T> newNode = new BinaryTreeNode<T>(element);
+
+		// recursively build the left sub-tree
+		newNode.setLeft(buildBalancedTree(list, start, mid - 1));
+
+		// recursively build right sub tree
+		newNode.setRight(buildBalancedTree(list, mid + 1, end));
+
+		// return newly created balanced tree
+		return newNode;
 	}
 
 	/**

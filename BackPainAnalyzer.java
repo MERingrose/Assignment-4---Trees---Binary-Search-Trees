@@ -10,14 +10,10 @@ public class BackPainAnalyzer {
    */
   public static void main(String[] args) throws FileNotFoundException {
 
-    // System.out.println("So, you’re having back pain.");
+    System.out.println("So, you’re having back pain? (Y for Yes, N for No)");
 
-    // DecisionTree expert = new DecisionTree("input.txt");
-    // expert.evaluate();
-
-    System.out.println("So, you'd like some reccommendations on book genres.");
-
-    DecisionTree expert = new DecisionTree("input1.txt");
+    DecisionTree expert = new DecisionTree("input.txt");
     expert.evaluate();
+
   }
 }

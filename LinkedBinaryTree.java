@@ -124,7 +124,7 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T> {
 	 * @return the height of the tree
 	 */
 	public int getHeight() {
-		return height(root) - 1;
+		return height(root);
 	}
 
 	/**

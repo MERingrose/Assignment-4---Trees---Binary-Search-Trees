@@ -1,23 +1,23 @@
 19
-Does the reader prefer fiction? (0)
-Does the reader prefer narrative non-fiction? (1)
-Does the reader prefer stories set in a specific time period or setting? (2)
-Does the reader prefer science? (3)
-Does the reader prefer biographies? (4)
-Does the reader prefer stories with a focus on action? (5)
-Does the reader prefer stories with a fantastical element? (6)
-Does the reader prefer self-improvement themes? (7)
-Your suggested genre is: Popular Science. (8)
-Your suggested genre is: History. (9)
-Your suggested genre is: Biographies or Memoirs. (10)
-Does the reader prefer intimate personal relationships? (11)
-Your suggested genre is: Thriller. (12)
-Your suggested genre is: Science Fiction. (13)
-Your suggested genre is: Fantasy. (14)
-Your suggested genre is: Reference books. (15)
-Your suggested genre is: Self-Help. (16)
-Your suggested genre is: Contemporary Fiction. (17)
-Your suggested genre is: Romance. (18)
+Does the reader prefer fiction? 
+Does the reader prefer narrative non-fiction? 
+Does the reader prefer stories set in a specific time period or setting? 
+Does the reader prefer science? 
+Does the reader prefer biographies? 
+Does the reader prefer stories with a focus on action? 
+Does the reader prefer stories with a fantastical element? 
+Does the reader prefer self-improvement themes? 
+Your suggested genre is: Popular Science. 
+Your suggested genre is: History. 
+Your suggested genre is: Biographies or Memoirs. 
+Does the reader prefer intimate personal relationships? 
+Your suggested genre is: Thriller. 
+Your suggested genre is: Science Fiction. 
+Your suggested genre is: Fantasy. 
+Your suggested genre is: Reference books. 
+Your suggested genre is: Self-Help. 
+Your suggested genre is: Contemporary Fiction. 
+Your suggested genre is: Romance. 
 
 11 17 18
 7 15 16
